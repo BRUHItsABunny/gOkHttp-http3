@@ -1,4 +1,4 @@
-package gOkHttp_http3
+package gokhttp_http3
 
 import "testing"
 

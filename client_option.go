@@ -1,4 +1,4 @@
-package gOkHttp_http3
+package gokhttp_http3
 
 import (
 	"github.com/quic-go/quic-go/http3"
