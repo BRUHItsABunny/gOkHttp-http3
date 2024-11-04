@@ -12,7 +12,7 @@ import (
 )
 
 func TestClientOption(t *testing.T) {
-	hClient, err := gokhttp.NewHTTPClient(NewHTTP3Option(&http3.RoundTripper{}))
+	hClient, err := gokhttp.NewHTTPClient(NewHTTP3Option(&http3.Transport{}))
 	require.NoError(t, err, "NewHTTPClient: errored unexpectedly.")
 
 	req, err := gokhttp_requests.MakeGETRequest(context.Background(), "https://cloudflare-quic.com/")
